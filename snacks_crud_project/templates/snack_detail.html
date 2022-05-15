@@ -1,0 +1,13 @@
+{% extends "_base.html" %}
+
+
+{% block page_title %} Snack Details {% endblock %}
+
+    
+{% block main %}
+
+    <h3>Snack Details for {{snack.title}} are below:</h3>
+    <p> - <b>Purchaser</b>: {{snack.purchaser}} <br> 
+        - <b>Description</b>: {{snack.description}} <br>  
+    </p>
+{% endblock %}
