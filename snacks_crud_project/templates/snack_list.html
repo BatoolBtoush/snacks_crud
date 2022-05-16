@@ -1,0 +1,25 @@
+{% extends '_base.html' %}
+
+    
+{% block page_title %} Snack List {% endblock %}
+
+
+{% block main %}
+    <h1>Snacks List</h1>
+    <p>
+        In this section you can see all the snacks that are available.
+        <br>
+        And if you press on any of the snack's names, you will be redirected to the snack's details page.
+    </p>
+
+{% for snack in snack_list %}
+<p> <a href="{% url 'snack_detail' pk=snack.pk %}"> - Snack Title: {{snack.title}}</a>
+    <br>
+    - id number: {{snack.id}} <br>
+</p>
+{% endfor %}
+{% endblock %}
+
+
+
+

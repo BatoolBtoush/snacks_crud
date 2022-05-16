@@ -1,0 +1,16 @@
+{% extends "_base.html" %}
+
+{% block page_title %} Update Snack {% endblock %}
+
+{% block main %}
+    <p>
+    In this section you can update a snack. In order to do so, please fill out the form below.
+    </p>
+    <br>
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" class="update-button" value="Update">
+    </form>
+{% endblock %}
