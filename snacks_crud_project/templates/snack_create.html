@@ -3,11 +3,14 @@
 {% block page_title %} Create Snack {% endblock %}
 
 {% block main %}
-
-<form action="" method="POST">
-    {% csrf_token %}
-    {{form.as_p}}
-    <input type="submit" class="create-button" value="Create">
-</form>
+    <p>
+    In this section you can create a new snack. In order to do so, please fill out the form below.
+    </p>
+    <br>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" class="create-button" value="Create">
+    </form>
 
 {% endblock %}
