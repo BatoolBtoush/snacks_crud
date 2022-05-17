@@ -8,5 +8,8 @@
     <h3>Snack Details for {{snack.title}} are below:</h3>
     <p> - <b>Purchaser</b>: {{snack.purchaser}} <br> 
         - <b>Description</b>: {{snack.description}} <br>  
+            <li><a href="{% url 'snack_update' snack.pk %}">Update Snack</a></li>
+            <li><a href="/{{snack.id}}/delete">Delete Snack</a></li>
+
     </p>
 {% endblock %}
